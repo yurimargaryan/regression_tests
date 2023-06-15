@@ -3,7 +3,7 @@ tickets=()
 sum=$((100-14))
 return_data=return_data.txt
 dirname=$(basename $(pwd))
-result_dir="../../unit_tests_results/$dirname"
+result_dir="../../regression_tests_results/$dirname"
 mkdir -p ${result_dir}
 echo $sum > ${result_dir}/${return_data}
 diff $result_dir/$return_data out.gout > ${result_dir}/diff 
