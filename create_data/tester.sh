@@ -1,4 +1,4 @@
-test_types=("nightly" "weekly") 
+test_types=("continous" "nightly" "weekly") 
 ticket=1111
 found=0
 for item in "${test_types[@]}"
