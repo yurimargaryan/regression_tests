@@ -18,10 +18,10 @@ if [[ $found -eq 1 ]]; then
         diff $result_dir/$return_data out.gout > ${result_dir}/diff
 	if [ -s "$result_dir/diff" ]; then
             echo "FAIL" > $result_dir/result.txt
-            echo "$dirname: FAIL," >> ../../test_result.txt
+            echo "$dirname: FAIL" >> ../../test_result.txt
         else
             echo "PASS" > $result_dir/result.txt
-            echo "$dirname: PASS," >> ../../test_result.txt
+            echo "$dirname: PASS" >> ../../test_result.txt
         fi
 
 fi
